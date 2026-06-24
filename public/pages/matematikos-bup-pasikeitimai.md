@@ -14,4 +14,4 @@ _2026-06-24 ekrano nuotrauka_
 
 Nors ir tokie pakeitimai (tikiuosi) yra aiškiai įvardyti teisiniuose dokumentuose, juos atrasti dažnai yra sudėtinga. Todėl sukūriau šį puslapį, kuriame yra pateikiama BUP pasikeitimų informacija. Duomenys yra kiekvieną vidurnaktį parsiunčiami iš [emokykla.lt](https://emokykla.lt/bendrosios-programos/visos-bendrosios-programos/5?types=7) puslapio ir palyginami su senesniais.
 
-...
+_Netrukus bus užbaigta..._
