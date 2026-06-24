@@ -144,14 +144,25 @@ main {
 section {
     width: 100%;
     max-width: 860px;
+    min-width: 0;
     padding: 20px 16px;
     box-sizing: border-box;
-    overflow-x: auto;
 }
 
-section img {
+#content {
+    overflow: hidden;
+}
+
+#content img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+#content pre,
+#content table {
+    overflow-x: auto;
+    display: block;
 }
 
 footer {
