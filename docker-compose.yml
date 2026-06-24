@@ -1,0 +1,4 @@
+services:
+  pagal-programa:
+    image: ghcr.io/skafis-edtech/pagal-programa-i:latest
+    build: .
