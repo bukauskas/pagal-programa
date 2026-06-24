@@ -149,6 +149,11 @@ section {
     overflow-x: auto;
 }
 
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     flex-shrink: 0;
     padding: 12px 16px;

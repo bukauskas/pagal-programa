@@ -4,14 +4,14 @@
 
 _2024-07-23 ekrano nuotrauka iš archive.org_
 
-![Sena modulių temos ekrano nuotrauka](../images/senas-be-paklaidu.png)
+![Sena modulių temos ekrano nuotrauka](../images/senas-su-paklaidom.png)
 
 Tačiau netrukus ši tema buvo išimta iš programos.
 
 _2026-06-24 ekrano nuotrauka_
 
-![Nauja modulių temos ekrano nuotrauka](../images/naujas-su-paklaidom.png)
+![Nauja modulių temos ekrano nuotrauka](../images/naujas-be-paklaidu.png)
 
-Nors ir tokie pakeitimai (tikiuosi) yra aiškiai įvardyti teisiniuose dokumentuose, juos atrasti dažnai yra sudėtinga. Todėl sukūrėme šį puslapį, kuriame yra pateikiama BUP pasikeitimų informacija. Duomenys yra kiekvieną vidurnaktį parsiunčiami iš [emokykla.lt](https://emokykla.lt/bendrosios-programos/visos-bendrosios-programos/5?types=7) puslapio ir palyginami su senesniais.
+Nors ir tokie pakeitimai (tikiuosi) yra aiškiai įvardyti teisiniuose dokumentuose, juos atrasti dažnai yra sudėtinga. Todėl sukūriau šį puslapį, kuriame yra pateikiama BUP pasikeitimų informacija. Duomenys yra kiekvieną vidurnaktį parsiunčiami iš [emokykla.lt](https://emokykla.lt/bendrosios-programos/visos-bendrosios-programos/5?types=7) puslapio ir palyginami su senesniais.
 
 ...
