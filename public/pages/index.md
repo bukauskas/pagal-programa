@@ -2,4 +2,10 @@
 
 Matematikos bendrojo ugdymo programa (BUP) paprastai!
 
-_Netrukus..._
+[Matematikos BUP informacija](./math-bup-about)
+
+[Matematikos BUP turinys](./math-bup-content)
+
+[Matematikos BUP pasikeitimai](./math-bup-changed)
+
+[Apie](./about)
