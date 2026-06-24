@@ -1,4 +1,7 @@
 [
   { "slug": "index", "title": "Pradžia" },
-  { "slug": "about", "title": "Apie" }
+  { "slug": "about", "title": "Apie" },
+  { "slug": "math-bup-about", "title": "Matematikos BUP informacija" },
+  { "slug": "math-bup-changed", "title": "Matematikos BUP pasikeitimai" },
+  { "slug": "math-bup-content", "title": "Matematikos BUP turinys" }
 ]
