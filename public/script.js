@@ -16,7 +16,7 @@ async function loadPage(slug) {
     throwOnError: false,
   });
 
-  document.querySelectorAll("#nav a").forEach((a) => {
+  document.querySelectorAll("#nav a, #drawer-nav a").forEach((a) => {
     a.classList.toggle("active", a.dataset.slug === slug);
   });
 }
@@ -31,21 +31,51 @@ function navigate(slug) {
   loadPage(slug);
 }
 
+function closeDrawer() {
+  document.getElementById("drawer").classList.remove("open");
+  document.getElementById("drawer-overlay").classList.remove("visible");
+}
+
 async function init() {
   const res = await fetch("/pages.json");
   const pages = await res.json();
 
-  const nav = document.getElementById("nav");
-  nav.innerHTML = pages
-    .map((p) => `<a href="${p.slug === "index" ? "/" : "/" + p.slug}" data-slug="${p.slug}">${p.title}</a>`)
+  const links = pages
+    .map(
+      (p) =>
+        `<a href="${p.slug === "index" ? "/" : "/" + p.slug}" data-slug="${p.slug}">${p.title}</a>`
+    )
     .join("");
 
-  nav.addEventListener("click", (e) => {
+  document.getElementById("nav").innerHTML = links;
+  document.getElementById("drawer-nav").innerHTML = links;
+
+  document.getElementById("nav").addEventListener("click", (e) => {
     const a = e.target.closest("a");
     if (!a) return;
     e.preventDefault();
     navigate(a.dataset.slug);
   });
+
+  document.getElementById("drawer-nav").addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (!a) return;
+    e.preventDefault();
+    closeDrawer();
+    navigate(a.dataset.slug);
+  });
+
+  document.getElementById("menu-toggle").addEventListener("click", () => {
+    const drawer = document.getElementById("drawer");
+    if (drawer.classList.contains("open")) {
+      closeDrawer();
+    } else {
+      drawer.classList.add("open");
+      document.getElementById("drawer-overlay").classList.add("visible");
+    }
+  });
+
+  document.getElementById("drawer-overlay").addEventListener("click", closeDrawer);
 
   loadPage(currentSlug());
 }

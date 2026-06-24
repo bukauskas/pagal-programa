@@ -27,20 +27,31 @@
     </head>
 
     <body>
-        <header></header>
+        <header>
+            <div class="header-inner">
+                <a href="/" class="site-title"
+                    >pagalprograma.lt <sub>by Šimtukas</sub></a
+                >
+                <nav id="nav"></nav>
+                <button id="menu-toggle" aria-label="Meniu">&#9776;</button>
+            </div>
+        </header>
+
+        <div id="drawer">
+            <nav id="drawer-nav"></nav>
+        </div>
+        <div id="drawer-overlay"></div>
+
         <main>
-            <aside><nav id="nav"></nav></aside>
             <section>
                 <div id="content"></div>
             </section>
-            <aside></aside>
         </main>
+
         <footer>
             Iškepė Naglis @ Šimtukas tech (<a href="mailto:tech@simtukas.lt"
                 >tech@simtukas.lt</a
-            >).
-            <br />
-            Prisidėk:
+            >). Prisidėk:
             <a href="https://github.com/skafis-edtech/pagal-programa">GitHub</a
             >. Paskutinį kartą keista: <span id="last-updated">2026-06-23</span>
         </footer>
