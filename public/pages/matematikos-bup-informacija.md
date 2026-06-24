@@ -28,8 +28,8 @@ TURINYS:
 
 https://emokykla.lt/bendrosios-programos/visos-bendrosios-programos/5?types=7
 
-## Įstatymas
+## Teisinė informacija
 
-BUP nuo 2023 m. įstatymas: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/45f3b02523e311edb36fa1cf41a91fd9/asr
+Bendroji ugdymo programa (BUP), patvirtinta Lietuvos Respublikos švietimo, mokslo ir sporto ministro 2022 m. rugpjūčio 24 d. įsakymu Nr. V-1269 (2022-09-30 įsakymo Nr. V-1541 redakcija): https://www.e-tar.lt/portal/lt/legalAct/1a764050239511edb4cae1b158f98ea5/asr 
 
-Matematikos BUP priedas atsisiųsti: https://e-seimas.lrs.lt/rs/aesupplement/45f3b02523e311edb36fa1cf41a91fd9/yzerJsfdxB/fef6f1e2d59711f0948bfb5fa1e0c51b/
+Matematikos BUP priedas atsisiųsti: https://www.e-tar.lt/rs/aesupplement/1a764050239511edb4cae1b158f98ea5/PtvgOnKxAG/c6fd7612d58d11f08918e1adc7c5b1ec/
