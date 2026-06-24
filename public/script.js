@@ -1,11 +1,10 @@
-async function loadContentMarkdownFile() {
-  const res = await fetch("content.md");
-  if (!res.ok) throw new Error("Failed to fetch");
+async function loadPage(slug) {
+  const res = await fetch(`/pages/${slug}.md`);
+  if (!res.ok) throw new Error(`Page not found: ${slug}`);
   const text = await res.text();
 
-  const html = marked.parse(text);
   const contentEl = document.getElementById("content");
-  contentEl.innerHTML = html;
+  contentEl.innerHTML = marked.parse(text);
 
   renderMathInElement(contentEl, {
     delimiters: [
@@ -16,6 +15,41 @@ async function loadContentMarkdownFile() {
     ],
     throwOnError: false,
   });
+
+  document.querySelectorAll("#nav a").forEach((a) => {
+    a.classList.toggle("active", a.dataset.slug === slug);
+  });
 }
 
-document.addEventListener("DOMContentLoaded", loadContentMarkdownFile);
+function currentSlug() {
+  return window.location.pathname.replace(/^\//, "") || "index";
+}
+
+function navigate(slug) {
+  const path = slug === "index" ? "/" : `/${slug}`;
+  history.pushState(null, "", path);
+  loadPage(slug);
+}
+
+async function init() {
+  const res = await fetch("/pages.json");
+  const pages = await res.json();
+
+  const nav = document.getElementById("nav");
+  nav.innerHTML = pages
+    .map((p) => `<a href="${p.slug === "index" ? "/" : "/" + p.slug}" data-slug="${p.slug}">${p.title}</a>`)
+    .join("");
+
+  nav.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (!a) return;
+    e.preventDefault();
+    navigate(a.dataset.slug);
+  });
+
+  loadPage(currentSlug());
+}
+
+window.addEventListener("popstate", () => loadPage(currentSlug()));
+
+document.addEventListener("DOMContentLoaded", init);

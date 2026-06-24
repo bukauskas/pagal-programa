@@ -38,6 +38,29 @@ aside {
     padding: 10px;
 }
 
+#nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#nav a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+#nav a:hover {
+    background-color: rgb(210, 218, 200);
+}
+
+#nav a.active {
+    background-color: rgb(180, 195, 160);
+    font-weight: bold;
+}
+
 @media (max-width: 1024px) {
     aside {
         display: none;
